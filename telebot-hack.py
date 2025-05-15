@@ -30,7 +30,7 @@ def sendMedia(message):
     
 @bot.message_handler(commands=['start', 'hello'])
 def send_welcome(message):
-    msg = bot.send_message(message.chat.id, "Let's hack the system!")
+    msg = bot.send_message(message.chat.id, "Let's get into the system!")
     bot.register_next_step_handler(msg, hack)
 
 @bot.message_handler(commands=['download'])
